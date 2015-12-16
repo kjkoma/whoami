@@ -1,0 +1,23 @@
+<header class="navbar nabvar-fixed-top" role="navigation">
+  <div class="container-fluid">
+
+    <!-- mobile用 -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#global-nav-menu" aria-expanded="true">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- pc用 -->
+    <div class="collapse navbar-collapse" id="global-nav-menu">
+      <ul class="nav nav-pills nav-justified">
+        <li><%= link_to "Living Place", living_path, {:class => "nav_line#{yield(:select_link_living)}"} %></li>
+        <li><%= link_to "Love Movies" , movies_path, {:class => "nav_line#{yield(:select_link_movies)}"} %></li>
+        <li><%= link_to "Love Musics" , musics_path, {:class => "nav_line#{yield(:select_link_musics)}"} %></li>
+      </ul>
+    </div>
+
+  </div>
+</header>

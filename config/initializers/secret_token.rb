@@ -8,4 +8,4 @@ def secure_token
   end
 end
 
-Iamkijima::Application.config.secret_key_base = secure_token
+Whoami::Application.config.secret_key_base = secure_token

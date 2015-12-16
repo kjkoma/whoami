@@ -1,9 +1,19 @@
 Rails.application.routes.draw do
+  resources :lovemusics
+  resources :lovemovies
+  resources :profiles
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
+  root 'welcomes#index'
+
+  # Matches path
+  match '/iam'       , to: 'profiles#iam'    , via: 'get'
+  match '/living'    , to: 'profiles#living' , via: 'get'
+  match '/movies'    , to: 'lovemovies#home' , via: 'get'
+  match '/musics'    , to: 'lovemusics#home' , via: 'get'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
