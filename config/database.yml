@@ -22,7 +22,7 @@ development:
 
 production:
   <<: *default
-  database: d3gtv5tmliar3c
-  host: ec2-107-21-222-62.compute-1.amazonaws.com
-  username: hitcbtjssrzkow
-  password: 64iUDgirP_WSgBo0wJs1wYr9wS
+  database: db97vag1n2iie1
+  host: ec2-54-225-134-223.compute-1.amazonaws.com
+  username: nfezmsyeddogpw
+  password: 1bRADJLidw8IY3_HKi8NBdsC4E
