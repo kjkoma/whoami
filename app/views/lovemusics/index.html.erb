@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lovemusics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Loveword</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lovemusics.each do |lovemusic| %>
+      <tr>
+        <td><%= lovemusic.loveword %></td>
+        <td><%= link_to 'Show', lovemusic %></td>
+        <td><%= link_to 'Edit', edit_lovemusic_path(lovemusic) %></td>
+        <td><%= link_to 'Destroy', lovemusic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lovemusic', new_lovemusic_path %>
