@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Who am i</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'bootstrap.min' , media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    'bootstrap-theme.min' , media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    'custom_min', media: 'screen and (max-width:480px)', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'custom', media: 'screen and (min-width:480px)', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
+  <script type="text/javascript" src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

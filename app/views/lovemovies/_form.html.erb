@@ -1,0 +1,21 @@
+<%= form_for(@lovemovie) do |f| %>
+  <% if @lovemovie.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lovemovie.errors.count, "error") %> prohibited this lovemovie from being saved:</h2>
+
+      <ul>
+      <% @lovemovie.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :loveword %><br>
+    <%= f.text_field :loveword %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
