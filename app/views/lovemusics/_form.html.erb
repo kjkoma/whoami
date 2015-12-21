@@ -1,0 +1,21 @@
+<%= form_for(@lovemusic) do |f| %>
+  <% if @lovemusic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lovemusic.errors.count, "error") %> prohibited this lovemusic from being saved:</h2>
+
+      <ul>
+      <% @lovemusic.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :loveword %><br>
+    <%= f.text_field :loveword %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

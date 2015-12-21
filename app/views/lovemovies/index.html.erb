@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Lovemovies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Loveword</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @lovemovies.each do |lovemovie| %>
+      <tr>
+        <td><%= lovemovie.loveword %></td>
+        <td><%= link_to 'Show', lovemovie %></td>
+        <td><%= link_to 'Edit', edit_lovemovie_path(lovemovie) %></td>
+        <td><%= link_to 'Destroy', lovemovie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Lovemovie', new_lovemovie_path %>
