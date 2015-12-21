@@ -1,0 +1,194 @@
+html { 
+  background: url(/assets/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background-color: transparent;
+  font-family: Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('/assets/glyphicons-halflings-regular.eot');
+  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('/assets/glyphicons-halflings-regular.woff') format('woff'), url('/assets/glyphicons-halflings-regular.ttf') format('truetype'), url('/assets/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+/* ************************************************************************** */
+/* BootStrap                                                                  */
+/* ************************************************************************** */
+.icon-bar {
+  background-color: #ffffff;
+}
+
+.nav a {
+  color: #ffffff;
+}
+.nav a:hover {
+  color: #556ef0;
+}
+
+/* ************************************************************************** */
+/* welcome page                                                               */
+/* ************************************************************************** */
+.home_main {
+  padding-top: 4%;
+}
+.home_main img {
+  width: 60%;
+  height: 60%;
+}
+.home_title {
+  font-size: 300%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: #ffffff;
+}
+.home_link {
+  font-size: 120%;
+  padding: 10px 40px 10px 40px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 0.8;
+}
+.home_link:visited {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+/*
+.home_link:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: #ffffff;
+  color: #3461f5;
+  text-decoration: none;
+  opacity: 0.8;
+}
+*/
+.home_link:hover {
+  border: 2px solid #ffffff;
+  text-decoration: none;
+}
+.home_link:active {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* ************************************************************************** */
+/* header parts                                                               */
+/* ************************************************************************** */
+.me_link {
+  opacity: 0;
+}
+.me_link:hover {
+  cursor: default;
+}
+.nav_line {
+  width: 94%;
+  border-bottom: solid 6px #ffffff;
+}
+.nav_line_select {
+  width: 94%;
+  border-bottom: solid 6px #245cf1;
+}
+#home_navi a, #home_navi a:hover, #home_navi a:active, #home_navi span {
+  color: #ffffff;
+}
+#home_navi span {
+  margin-right: 0.5em;
+}
+
+/* ************************************************************************** */
+/* Profile parts                                                              */
+/* ************************************************************************** */
+.profile_image {
+  margin-bottom: -78px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.profile {
+  padding-top: 90px;
+  font-size: 160%;
+  font-weight: 600;
+  background-color: #ffffff;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  box-shadow: rgba(113, 135, 164, 0.65098) 0px 0px 6px 4px;
+  -webkit-box-shadow: rgba(113, 135, 164, 0.65098) 0px 0px 6px 4px;
+  -moz-box-shadow: rgba(113, 135, 164, 0.65098) 0px 0px 6px 4px;
+}
+.profile_label {
+  margin-top: 24%;
+  margin-bottom: 4%;
+  font-size: 80%;
+  color : #556ef0;
+}
+.profile_footer {
+  padding-top: 20%;
+  padding-bottom: 2%;
+}
+.profile_footer img {
+  width: 100%;
+  height: 100%;
+}
+#iammap {
+  display: none;
+}
+#profile_area {
+  display: none;
+}
+
+/* ************************************************************************** */
+/* Living Place Page                                                          */
+/* ************************************************************************** */
+#map {
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+}
+
+/* ************************************************************************** */
+/* Love Youtube Page                                                          */
+/* ************************************************************************** */
+#youtube {
+  margin-top: 20px;
+}
+#youtube_container div a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#youtube_container div a:hover {
+}
+#youtube_container div a img {
+  width: 100%;
+}
+#youtube_container div a p {
+  color: #ffffff;
+  padding: 2px 0 2px 0;
+  height: 72px;
+}
+
+/* ************************************************************************** */
+/* Love Instagram Page                                                          */
+/* ************************************************************************** */
+#instagram {
+  margin-top: 20px;
+}
+#instagram_container div a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#instagram_container div a:hover {
+}
+#instagram_container div a img {
+  width: 100%;
+  height: 100%;
+}
+#instagram_container div a p {
+  color: #ffffff;
+  padding: 6px 0 6px 0;
+  height: 72px;
+}
